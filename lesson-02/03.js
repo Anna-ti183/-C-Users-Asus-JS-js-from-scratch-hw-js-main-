@@ -7,3 +7,17 @@
 const score = 70 // тестовое значение, можно изменять
 let grade
 // your code
+
+if (score >=0 && score <= 49){
+    alert('Your rating: F')
+} else if(score >=50 && score <=69){
+    alert('Your rating: D')
+} else if(score >=70 && score <=79 ){
+    alert('Your rating: C')
+} else if(score >=80 && score <=89){
+    alert('Your rating: B')
+} else if (score >=90 && score <=100){
+    alert('Your rating: A')
+}
+
+console.log(grade)
