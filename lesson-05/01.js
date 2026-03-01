@@ -15,5 +15,11 @@ const game = {
     gold: 250,
     lumber: 100,
   },
-  addResource() {}
+  addResource: function(resource, amount) {
+    if (resource in game.resources){ //проверяем есть ли ключ в объекте
+  game.resources[resource] += amount // если ключ есть, прибавляем значение `amount` к текущему ко-ву 
+}else{
+  console.log("Invalid resource") // если ключа нет 
+}
+ }
 }
